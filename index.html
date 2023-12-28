@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Bailey's Soups | Made Fresh Daily</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+  :root {
+    --max-width: 100%;
+    --primary-color: red;
+    --primary-color: steelblue;
+    --light-color: #fff;
+  }
+  body {
+    background: #333;
+  }
+   
+   /* Box 1 */
+  .box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: white;
+    width: 200px;
+    height: 200px;
+    animation-name: animate1;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+  h1 {
+    display: block;
+    width: 100px;
+    margin: auto;
+  }
+  p { 
+    display: flex;
+    justify-content: center;
+    color: #333;
+}
+
+  .logo {
+    margin-left: 20px;    
+  }
+  .soup {    
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    background: #fff;
+    border-radius: 20%;
+  }
+  
+  @keyframes animate1 {
+    to {
+      width: var(--max-width);
+      background: var(--primary-color);
+      color: white;
+    }
+  }
+  
+  /* Box 2 */
+  .box2 {
+    display: flex;
+    background: #fff;
+    height: 10px;
+    width: 200px;
+    animation-name: animate2;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 93vw;
+    margin: 0 auto;
+  }
+ 
+  .box2 li {    
+    list-style-type: none;
+    margin-right: 20px;
+  }
+  .box2 a {
+    text-decoration: none;
+    color: #333;
+  }
+  .box2 a:hover {
+    color: var(--light-color);
+    border-bottom: 1px solid var(--light-color);
+  }
+  
+  @keyframes animate2 {
+  
+    to {
+      height: 100px;
+      width: var(--max-width);
+      background: var(--primary-color);
+      color: white;
+    }
+  }
+  
+  </style>
+</head>
+<body>
+
+  <div class="box1">
+    <div>
+        <h1>Bailey's Bowl</h1>
+    </div>
+      <div class="logo"><img class="soup" src="https://cdn4.iconfinder.com/data/icons/kitchen-44/24/Soup-2-512.png" alt=""></div>    
+  </div>
+  
+  <div class="box2">
+    <div>
+      <p class="made">Soups made fresh daily</p>
+      <ul class="navbar">
+      <li><a href=""><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href=""><i class="fa-solid fa-address-card"></i> About</a></li>
+      <li><a href=""><i class="fa-solid fa-book-open-reader"></i> Menu</a></li>
+      <li><a href=""><i class="fa-solid fa-mobile-screen-button"></i> Contact</a></li>
+      </ul>
+      
+    </div>
+  
+  </div>
+
+  
+</body>
+</html>
